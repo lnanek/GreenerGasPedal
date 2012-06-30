@@ -33,13 +33,17 @@ public class Trigger {
 
 	private Category category;
 	
-	public Trigger(Context context, int priorityKeyId, int lowThresholdKeyId, int highThresholdKeyId, int scoreKeyId, int imageUrlKeyId, Category category) {
+	private String contentDescription;
+	
+	public Trigger(Context context, int priorityKeyId, int lowThresholdKeyId, int highThresholdKeyId, int scoreKeyId, 
+			int imageUrlKeyId, Category category, String contentDescription) {
 		priorityKey = context.getString(priorityKeyId);
 		lowThresholdKey = context.getString(lowThresholdKeyId);
 		highThresholdKey = context.getString(highThresholdKeyId);
 		scoreKey = context.getString(scoreKeyId);
 		imageUrlKey = context.getString(imageUrlKeyId);
 		this.category = category;
+		this.contentDescription = contentDescription;
 	}
 	
 	public void updatePrefs(SharedPreferences prefs) {
@@ -64,6 +68,7 @@ public class Trigger {
 			result.priority = priority;
 			result.url = imageUrl;
 			result.scoreChange = score;
+			result.contentDescription = contentDescription;
 			return true;
 		}
 		
@@ -79,21 +84,21 @@ public class Trigger {
 				R.string.preferenceKeyAccelerationGoodHighThreshold, 
 				R.string.preferenceKeyAccelerationGoodScore, 
 				R.string.preferenceKeyAccelerationGoodImage,
-				Category.ACCELERATION));
+				Category.ACCELERATION, "Good Acceleration"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyAccelerationMediumPriority, 
 				R.string.preferenceKeyAccelerationMediumLowThreshold, 
 				R.string.preferenceKeyAccelerationMediumHighThreshold, 
 				R.string.preferenceKeyAccelerationMediumScore, 
 				R.string.preferenceKeyAccelerationMediumImage,
-				Category.ACCELERATION));
+				Category.ACCELERATION, "OK Acceleration"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyAccelerationBadPriority, 
 				R.string.preferenceKeyAccelerationBadLowThreshold, 
 				R.string.preferenceKeyAccelerationBadHighThreshold, 
 				R.string.preferenceKeyAccelerationBadScore, 
 				R.string.preferenceKeyAccelerationBadImage,
-				Category.ACCELERATION));
+				Category.ACCELERATION, "Bad Acceleration"));
 
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyBreakingGoodPriority, 
@@ -101,21 +106,21 @@ public class Trigger {
 				R.string.preferenceKeyBreakingGoodHighThreshold, 
 				R.string.preferenceKeyBreakingGoodScore, 
 				R.string.preferenceKeyBreakingGoodImage,
-				Category.BREAKING));
+				Category.BREAKING, "Good Breaking"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyBreakingMediumPriority, 
 				R.string.preferenceKeyBreakingMediumLowThreshold, 
 				R.string.preferenceKeyBreakingMediumHighThreshold, 
 				R.string.preferenceKeyBreakingMediumScore, 
 				R.string.preferenceKeyBreakingMediumImage,
-				Category.BREAKING));
+				Category.BREAKING, "Medium Breaking"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyBreakingBadPriority, 
 				R.string.preferenceKeyBreakingBadLowThreshold, 
 				R.string.preferenceKeyBreakingBadHighThreshold, 
 				R.string.preferenceKeyBreakingBadScore, 
 				R.string.preferenceKeyBreakingBadImage,
-				Category.BREAKING));
+				Category.BREAKING, "Bad Breaking"));
 
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyCorneringGoodPriority, 
@@ -123,21 +128,21 @@ public class Trigger {
 				R.string.preferenceKeyCorneringGoodHighThreshold, 
 				R.string.preferenceKeyCorneringGoodScore, 
 				R.string.preferenceKeyCorneringGoodImage,
-				Category.CORNERING));
+				Category.CORNERING, "Good Cornering"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyCorneringMediumPriority, 
 				R.string.preferenceKeyCorneringMediumLowThreshold, 
 				R.string.preferenceKeyCorneringMediumHighThreshold, 
 				R.string.preferenceKeyCorneringMediumScore, 
 				R.string.preferenceKeyCorneringMediumImage,
-				Category.CORNERING));
+				Category.CORNERING, "Medium Cornering"));
 		triggers.add(new Trigger(context, 
 				R.string.preferenceKeyCorneringBadPriority, 
 				R.string.preferenceKeyCorneringBadLowThreshold, 
 				R.string.preferenceKeyCorneringBadHighThreshold, 
 				R.string.preferenceKeyCorneringBadScore, 
 				R.string.preferenceKeyCorneringBadImage,
-				Category.CORNERING));
+				Category.CORNERING, "Bad Cornering"));
 		
 		return triggers;
 	}

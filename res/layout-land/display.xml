@@ -20,6 +20,7 @@
 		    a:layout_height="fill_parent"
 		    a:layout_weight="1" 
 		    a:scrollbars="none"
+		    a:contentDescription=""
 		    />
 		<TextView
 			a:id="@+id/mainScore"  

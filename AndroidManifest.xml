@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:a="http://schemas.android.com/apk/res/android"
 		package="name.nanek.greenerpedal"
-		a:versionCode="1"
-		a:versionName="0.1">
+		a:versionCode="2"
+		a:versionName="0.2">
 		
 	<uses-sdk a:minSdkVersion="7" a:targetSdkVersion="15" />
 	

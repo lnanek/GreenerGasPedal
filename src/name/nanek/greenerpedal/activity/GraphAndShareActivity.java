@@ -26,6 +26,35 @@ import com.jjoe64.graphview.LineGraphView;
 
 public class GraphAndShareActivity extends Activity {
 	
+	private static class Stats {
+		private Float min;
+		private Float max;
+		private Float start;
+		private Float end;
+		
+		private void update(Float value) {
+			if ( null == min || min < value ) {
+				min = value;
+			}
+
+			if ( null == max || max > value ) {
+				max = value;
+			}
+
+			if ( null == start ) {
+				start = value;
+			}
+
+			if ( null != value ) {
+				end = value;
+			}
+		}
+		
+		private String getDescription(String name, String units) {
+			return name + " started at " + start + " " + units + " and ended at " + end + " " + units + ". The maximum was " + max + ".";
+		}
+	}
+	
 	private DataHelper data;
 	
 	private ViewGroup content;
@@ -52,8 +81,12 @@ public class GraphAndShareActivity extends Activity {
 		}
 		
 		GraphViewData[] gasUse = new GraphViewData[readings.size()];
+		Stats gasStats = new Stats();
 		GraphViewData[] breakUse = new GraphViewData[readings.size()];
+		Stats breakStats = new Stats();
 		GraphViewData[] moneySaved = new GraphViewData[readings.size()];
+		Stats moneyStats = new Stats();
+
 		int i = 0;
 		//Float previousSecondsAgo;
 		for(Reading reading : readings) {
@@ -94,7 +127,11 @@ public class GraphAndShareActivity extends Activity {
 			};  
 		
 		graphContent.addView(graphView);
-
+		graphContent.setContentDescription("Recent Driving Stats: " 
+				+ gasStats.getDescription("Gas use ", " tens of meters per second squared ")
+				+ breakStats.getDescription("Breaking use ", " tens of meters per second squared ")
+				+ moneyStats.getDescription("Money saved ", " cents."));
+		
 		//((LineGraphView) graphView).setDrawBackground(true);
 
 		// custom static labels

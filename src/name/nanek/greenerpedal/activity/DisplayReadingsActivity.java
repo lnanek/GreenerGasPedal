@@ -274,7 +274,7 @@ public class DisplayReadingsActivity extends Activity implements SensorEventList
 		}
 		    	
     	int priority = Integer.MAX_VALUE;
-    	TriggersResult result = new TriggersResult(prefs.idleImageUrl, priority, 1.5f);
+    	TriggersResult result = new TriggersResult(prefs.idleImageUrl, priority, 1.5f, "Good");
 		for ( Trigger trigger : prefs.triggers ) {
 			if ( trigger.updateResult(result, filter.getAcceleration(), filter.getBreaking(), filter.getCornering()) ) {
 				lastUptimeMillisWhenShowedNonIdleImage = SystemClock.uptimeMillis();
@@ -289,6 +289,7 @@ public class DisplayReadingsActivity extends Activity implements SensorEventList
 		if ( null == currentlyShownUrl || !currentlyShownUrl.equals(result.url) ) {
 			showImage(result.url);
     		currentlyShownUrl = result.url;
+    		views.webView.setContentDescription(result.contentDescription);
 		}
 		
     	logLine.updateCalculatedMeasurements(filter.getAcceleration(), filter.getBreaking(), filter.getCornering());

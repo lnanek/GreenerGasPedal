@@ -61,5 +61,6 @@
 		a:layout_width="fill_parent"
 		a:layout_height="0px"
 		a:layout_weight="1"
+		a:contentDescription="Not enough readings to graph. Sorry."
 		/>
 </LinearLayout>

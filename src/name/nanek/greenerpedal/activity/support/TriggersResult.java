@@ -7,11 +7,14 @@ public class TriggersResult {
 	public int priority;
 	
 	public float scoreChange;
+	
+	public String contentDescription;
 
-	public TriggersResult(String url, int priority, float scoreChange) {
+	public TriggersResult(String url, int priority, float scoreChange, String contentDescription) {
 		this.url = url;
 		this.priority = priority;
 		this.scoreChange = scoreChange;
+		this.contentDescription = contentDescription;
 	}
 	
 }

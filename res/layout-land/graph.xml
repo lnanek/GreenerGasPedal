@@ -27,6 +27,7 @@
 		    a:layout_width="0px" 
 		    a:layout_height="fill_parent"
 		    a:layout_weight="1" 
+			a:contentDescription="Not enough readings to graph. Sorry."
 			/>
 		<LinearLayout
 		    a:layout_width="wrap_content" 

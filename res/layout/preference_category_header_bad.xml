@@ -7,7 +7,9 @@
     a:layout_margin="5dp"
     a:padding="5dp"
 	>
+	<!-- Content description best kept empty here because the text view communicates the same thing anyway. -->
 	<ImageView 
+	    a:contentDescription=""
 	    a:layout_width="46dp" 
 	    a:layout_height="50dp"
 	    a:scaleType="centerInside" 
