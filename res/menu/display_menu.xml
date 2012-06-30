@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    	<item android:id="@+id/menuItemGraphAndShare" 
+	    	android:title="@string/displayMenuGraphAndShare" 
+	    	android:icon="@drawable/pie" 
+	    	android:showAsAction="ifRoom"
+	    	/>
+    	    
+	    <item android:id="@+id/menuItemSettings" 
+	    	android:title="@string/settings" 
+	    	android:icon="@drawable/prefs" 
+	    	android:showAsAction="ifRoom"
+	    	/>
+	    
+	    <item android:id="@+id/menuItemCalibrate" 
+	    	android:title="@string/displayMenuCalibrate" 
+	    	android:icon="@drawable/graph" 
+	    	android:showAsAction="ifRoom"
+	    	/>
+	    
+   	    <item android:id="@+id/menuItemShare" 
+	    	android:title="@string/displayMenuShare" 
+	    	android:icon="@drawable/share" 
+	    	android:showAsAction="ifRoom"
+	    	/>
+   		
+</menu>

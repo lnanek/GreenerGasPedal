@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	    
+	    <item android:id="@+id/menuItemShare" 
+	    	android:title="@string/displayMenuShare" 
+	    	android:icon="@drawable/share" 
+	    	android:showAsAction="ifRoom"
+	    	/>
+   		
+</menu>

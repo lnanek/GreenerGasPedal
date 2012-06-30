@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Greener Pedal</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    
+    <!-- Raw values window on the main screen. -->
+    <string name="rawValuesTitle">Raw values:</string>    
+    <string name="accelerationLabel">Acceleration (m/s^2>): </string>
+    <string name="breakingLabel">Breaking (m/s^2>): </string>
+    <string name="corneringLabel">Cornering (m/s^2>): </string>
+    <string name="tiltLabel">Tilt Setting (°): </string>
+
+	<!-- Menu on main screen. -->    
+    <string name="displayMenuGraphAndShare">Graph</string>
+    <string name="settings">Settings</string>
+    <string name="displayMenuCalibrate">Calibrate</string>
+    <string name="displayMenuShare">Share</string>
+    
+    <!-- Settings. -->
+    <string name="preferenceTitleIdleImage">Select idle image</string>
+    <string name="preferenceTitleAcceleration">Acceleration Settings</string>
+    <string name="preferenceTitleSelectImage">Select Image</string>
+    <string name="preferenceTitleLowThreshold">Low Threshold (m/s^2)</string>
+    <string name="preferenceTitleHighThreshold">High Threshold (m/s^2)</string>
+    <string name="preferenceTitlePriority">Priority</string>
+    <string name="preferenceTitleBreaking">Breaking Settings</string>
+    <string name="preferenceTitleCornering">Cornering Settings</string>
+    <string name="preferenceTitleKeepScreenOn">Keep Screen On</string>
+    <string name="preferenceTitleShowRawValues">Show Raw Values</string>
+    <string name="preferenceTitleSecondsBeforeIdle">Display Length (s)</string>
+    <string name="preferenceSummarySecondsBeforeIdle">Show image for x seconds before returning to idle</string>
+    <string name="goodText">Good</string>
+    <string name="mediumText">Medium</string>
+    <string name="badText">Bad</string>
+    <string name="forceUnits"> (m/s^2>)</string>
+	<string name="preferenceTitleAutomaticTiltCorrection">Auto tilt correction</string>
+	<string name="preferenceSummaryAutomaticTiltCorrection">Use orientation detected by phone to correct for tilt.</string>
+	<string name="preferenceTitleManualTiltCorrection">Fixed tilt correction (°)</string>
+	<string name="preferenceSummaryManualTiltCorrection">Enter 45 degrees to indicate screen is tilted, halfway facing the sky.</string>	
+	<string name="preferenceTitleSwapAccelBreak">Swap Acceleration/Breaking</string>
+	<string name="preferenceTitleLongTermRating">Estimate Money Saved</string>
+	<string name="preferenceTitleScore">Money Saved Per Hour</string>		
+ 	<string name="preferenceTitleSensitivity">Sensitivity</string>		
+ 	<string name="preferenceSummarySensitivity">Enter 1.0 to use current sensor reading. Closer to 0 to smooth.</string>		
+    
+</resources>

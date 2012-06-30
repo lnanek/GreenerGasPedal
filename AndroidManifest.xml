@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:a="http://schemas.android.com/apk/res/android"
+		package="name.nanek.greenerpedal"
+		a:versionCode="1"
+		a:versionName="0.1">
+		
+	<uses-sdk a:minSdkVersion="7" a:targetSdkVersion="15" />
+	
+	<uses-permission a:name="android.permission.WAKE_LOCK" />
+	<uses-permission a:name="android.permission.INTERNET" />
+	<uses-permission a:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission a:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<application a:icon="@drawable/icon" a:label="@string/app_name"
+			a:name=".GreenerPedalApp"
+			a:debuggable="true">
+
+		<activity a:name=".activity.DisplayReadingsActivity"
+				a:label="@string/app_name"
+				a:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action a:name="android.intent.action.MAIN" />
+				<category a:name="android.intent.category.LAUNCHER" />
+				<category a:name="android.intent.category.CAR_DOCK" />
+			</intent-filter>
+		</activity>
+		
+		<activity a:name=".activity.GraphAndShareActivity"
+					a:label="@string/app_name">
+		</activity>
+		
+		<activity a:name=".activity.EditPrefsActivity"
+					a:label="@string/app_name">
+		</activity>
+
+	</application>
+	
+	<supports-screens
+			a:largeScreens="true"
+			a:normalScreens="true"
+			a:smallScreens="true"
+			a:anyDensity="true" 
+			/>
+		
+</manifest>

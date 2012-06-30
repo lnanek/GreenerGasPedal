@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android" 
+	a:id="@+id/content"  
+    a:layout_width="fill_parent" 
+    a:layout_height="fill_parent" 
+	a:focusable="true"
+	a:focusableInTouchMode="true"
+	a:background="#FFF"
+	a:padding="20dp"
+	>
+	<requestFocus />
+	<LinearLayout
+	    a:layout_width="fill_parent" 
+	    a:layout_height="fill_parent" 
+	    a:orientation="horizontal"
+		>
+		<WebView 
+			a:id="@+id/mainRatingImage"  
+		    a:layout_width="0px" 
+		    a:layout_height="fill_parent"
+		    a:layout_weight="1" 
+		    a:scrollbars="none"
+		    />
+		<TextView
+			a:id="@+id/mainScore"  
+			a:textSize="80dp"
+			a:text="10"
+		    a:layout_width="0px" 
+		    a:layout_height="fill_parent"
+		    a:layout_weight="1" 
+		    a:gravity="center"
+		    a:textColor="#00be31"
+		    a:textStyle="bold"
+			/>
+	</LinearLayout>
+	<LinearLayout 
+		a:id="@+id/mainRawValuesArea"  
+		a:visibility="gone"
+	    a:layout_width="fill_parent" 
+	    a:layout_height="wrap_content" 
+	    a:orientation="vertical"
+	    a:layout_margin="5dp"
+	    a:padding="5dp"
+		a:background="@drawable/outlined_gray_box"
+		a:layout_gravity="center"
+		>
+		<TextView 
+			a:text="@string/rawValuesTitle"
+		    a:layout_width="fill_parent" 
+		    a:layout_height="wrap_content" 
+			a:textColor="#000"
+			a:textSize="22sp"
+			/>
+
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="X (m/s^2): " a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayXRawValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="Y (m/s^2): " a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayYRawValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="Z (m/s^2): " a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayZRawValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="@string/tiltLabel" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayTiltValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="@string/accelerationLabel" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayAccelerationValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="@string/breakingLabel" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayBreakingValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+		<LinearLayout a:layout_width="fill_parent" a:layout_height="wrap_content" a:orientation="horizontal">
+			<TextView a:text="@string/corneringLabel" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+			<View a:layout_width="0px" a:layout_height="0px" a:layout_weight="1" />
+			<TextView a:id="@+id/displayCorneringValue" a:layout_width="wrap_content" a:layout_height="wrap_content" a:textColor="#000" a:textSize="22sp" />
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>
+

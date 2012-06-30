@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:a="http://schemas.android.com/apk/res/android"
+	a:title="@string/settings"
+	>
+	
+	<EditTextPreference
+		a:key="@string/preferenceKeyIdleImage"
+		a:title="@string/preferenceTitleIdleImage"
+		a:defaultValue="idle.png"
+		/>	
+						
+	<PreferenceScreen a:title="@string/preferenceTitleAcceleration">
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_good"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationGoodImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="accelerating-good.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationGoodLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:inputType="numberDecimal"
+				a:defaultValue="2"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationGoodHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationGoodPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:defaultValue="7"
+				a:inputType="number"
+				/>				
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationGoodScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="1.5"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+				
+		</PreferenceCategory>
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_medium"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationMediumImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="accelerating-medium.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationMediumLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationMediumHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationMediumPriority"
+				a:defaultValue="4"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>		
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationMediumScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0.75"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+			
+		</PreferenceCategory>
+		
+		<PreferenceCategory 
+				a:layout="@layout/preference_category_header_bad"
+				>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationBadImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="accelerating-bad.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationBadLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationBadHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="100"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationBadPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:defaultValue="1"
+				a:inputType="number"
+				/>		
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyAccelerationBadScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+				
+	</PreferenceScreen>
+
+	<PreferenceScreen a:title="@string/preferenceTitleBreaking">
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_good"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingGoodImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="breaking-good.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingGoodLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="2"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingGoodHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingGoodPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:defaultValue="8"
+				a:inputType="number"
+				/>		
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingGoodScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="1.5"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_medium"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingMediumImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="breaking-medium.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingMediumLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingMediumHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingMediumPriority"
+				a:defaultValue="5"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>	
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingMediumScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0.75"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+		
+		<PreferenceCategory 
+				a:layout="@layout/preference_category_header_bad"
+				>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingBadImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="breaking-bad.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingBadLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingBadHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="100"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingBadPriority"
+				a:defaultValue="3"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>	
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyBreakingBadScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+		
+	</PreferenceScreen>
+	
+							
+	<PreferenceScreen a:title="@string/preferenceTitleCornering">
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_good"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringGoodImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="cornering-good.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringGoodLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="2"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringGoodHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringGoodPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>	
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringGoodScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="1.5"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+
+		<PreferenceCategory 
+			a:layout="@layout/preference_category_header_medium"
+			>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringMediumImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="cornering-medium.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringMediumLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="4"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringMediumHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringMediumPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>	
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringMediumScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0.75"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+		
+		<PreferenceCategory 
+				a:layout="@layout/preference_category_header_bad"
+				>
+			
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringBadImage"
+				a:title="@string/preferenceTitleSelectImage"
+				a:defaultValue="cornering-bad.png"
+				/>	
+
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringBadLowThreshold"
+				a:title="@string/preferenceTitleLowThreshold"
+				a:defaultValue="5"
+				a:inputType="numberDecimal"
+				/>			
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringBadHighThreshold"
+				a:title="@string/preferenceTitleHighThreshold"
+				a:defaultValue="100"
+				a:inputType="numberDecimal"
+				/>	
+				
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringBadPriority"
+				a:title="@string/preferenceTitlePriority"
+				a:inputType="number"
+				/>	
+	
+			<EditTextPreference
+				a:key="@string/preferenceKeyCorneringBadScore"
+				a:title="@string/preferenceTitleScore"
+				a:defaultValue="0"
+				a:inputType="numberDecimal"
+				a:dependency="@string/preferenceKeyLongTermRating"
+				/>	
+		
+		</PreferenceCategory>
+		
+	</PreferenceScreen>
+	
+	<CheckBoxPreference
+		a:key="@string/preferenceKeyKeepScreenOn"
+		a:title="@string/preferenceTitleKeepScreenOn"
+		a:defaultValue="true"
+		/>		
+		
+	<CheckBoxPreference
+		a:key="@string/preferenceKeyShowRawValues"
+		a:title="@string/preferenceTitleShowRawValues"
+		a:defaultValue="false"
+		/>		
+
+	<EditTextPreference
+		a:key="@string/preferenceKeySecondsBeforeIdle"
+		a:title="@string/preferenceTitleSecondsBeforeIdle"
+		a:summary="@string/preferenceSummarySecondsBeforeIdle"
+		a:defaultValue="3"
+		a:inputType="numberDecimal"
+		/>		
+
+	<CheckBoxPreference
+		a:key="@string/preferenceKeyLongTermRating"
+		a:title="@string/preferenceTitleLongTermRating"
+		a:defaultValue="true"
+		/>					
+
+	<CheckBoxPreference
+		a:key="@string/preferenceKeyAutomaticTiltCorrection"
+		a:title="@string/preferenceTitleAutomaticTiltCorrection"
+		a:summary="@string/preferenceSummaryAutomaticTiltCorrection"
+		a:defaultValue="false"
+		/>		
+
+	<EditTextPreference
+		a:key="@string/preferenceKeyManualTiltCorrection"
+		a:title="@string/preferenceTitleManualTiltCorrection"
+		a:summary="@string/preferenceSummaryManualTiltCorrection"
+		a:defaultValue="45"
+		a:inputType="numberDecimal"
+		/>			
+			
+	<CheckBoxPreference
+		a:key="@string/preferenceKeySwapAccelBreak"
+		a:title="@string/preferenceTitleSwapAccelBreak"
+		a:defaultValue="false"
+		/>		
+					
+	<EditTextPreference
+		a:key="@string/preferenceKeySensitivity"
+		a:title="@string/preferenceTitleSensitivity"
+		a:summary="@string/preferenceSummarySensitivity"
+		a:defaultValue="0.05"
+		a:inputType="numberDecimal"
+		/>		
+									
+</PreferenceScreen>

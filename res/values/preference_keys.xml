@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Preference Keys. -->
+    <string name="preferenceKeyIdleImage">preferenceKeyIdleImage</string>
+    <string name="preferenceKeyAccelerationGoodImage">preferenceKeyAccelerationGoodImage</string>
+    <string name="preferenceKeyAccelerationGoodLowThreshold">preferenceKeyAccelerationGoodLowThreshold</string>
+    <string name="preferenceKeyAccelerationGoodHighThreshold">preferenceKeyAccelerationGoodHighThreshold</string>
+    <string name="preferenceKeyAccelerationGoodPriority">preferenceKeyAccelerationGoodPriority</string>
+    <string name="preferenceKeyAccelerationGoodScore">preferenceKeyAccelerationGoodScore</string>
+    <string name="preferenceKeyAccelerationMediumImage">preferenceKeyAccelerationMediumImage</string>
+    <string name="preferenceKeyAccelerationMediumLowThreshold">preferenceKeyAccelerationMediumLowThreshold</string>
+    <string name="preferenceKeyAccelerationMediumHighThreshold">preferenceKeyAccelerationMediumHighThreshold</string>
+    <string name="preferenceKeyAccelerationMediumPriority">preferenceKeyAccelerationMediumPriority</string>
+    <string name="preferenceKeyAccelerationMediumScore">preferenceKeyAccelerationMediumScore</string>
+    <string name="preferenceKeyAccelerationBadImage">preferenceKeyAccelerationBadImage</string>
+    <string name="preferenceKeyAccelerationBadLowThreshold">preferenceKeyAccelerationBadLowThreshold</string>
+    <string name="preferenceKeyAccelerationBadHighThreshold">preferenceKeyAccelerationBadHighThreshold</string>
+    <string name="preferenceKeyAccelerationBadPriority">preferenceKeyAccelerationBadPriority</string>
+    <string name="preferenceKeyAccelerationBadScore">preferenceKeyAccelerationBadScore</string>
+    <string name="preferenceKeyBreakingGoodImage">preferenceKeyBreakingGoodImage</string>
+    <string name="preferenceKeyBreakingGoodLowThreshold">preferenceKeyBreakingGoodLowThreshold</string>
+    <string name="preferenceKeyBreakingGoodHighThreshold">preferenceKeyBreakingGoodHighThreshold</string>
+    <string name="preferenceKeyBreakingGoodPriority">preferenceKeyBreakingGoodPriority</string>
+    <string name="preferenceKeyBreakingGoodScore">preferenceKeyBreakingGoodScore</string>
+    <string name="preferenceKeyBreakingMediumImage">preferenceKeyBreakingMediumImage</string>
+    <string name="preferenceKeyBreakingMediumLowThreshold">preferenceKeyBreakingMediumLowThreshold</string>
+    <string name="preferenceKeyBreakingMediumHighThreshold">preferenceKeyBreakingMediumHighThreshold</string>
+    <string name="preferenceKeyBreakingMediumPriority">preferenceKeyBreakingMediumPriority</string>
+    <string name="preferenceKeyBreakingMediumScore">preferenceKeyBreakingMediumScore</string>
+    <string name="preferenceKeyBreakingBadImage">preferenceKeyBreakingBadImage</string>
+    <string name="preferenceKeyBreakingBadLowThreshold">preferenceKeyBreakingBadLowThreshold</string>
+    <string name="preferenceKeyBreakingBadHighThreshold">preferenceKeyBreakingBadHighThreshold</string>
+    <string name="preferenceKeyBreakingBadPriority">preferenceKeyBreakingBadPriority</string>
+    <string name="preferenceKeyBreakingBadScore">preferenceKeyBreakingBadScore</string>
+    <string name="preferenceKeyCorneringGoodImage">preferenceKeyCorneringGoodImage</string>
+    <string name="preferenceKeyCorneringGoodLowThreshold">preferenceKeyCorneringGoodLowThreshold</string>
+    <string name="preferenceKeyCorneringGoodHighThreshold">preferenceKeyCorneringGoodHighThreshold</string>
+    <string name="preferenceKeyCorneringGoodPriority">preferenceKeyCorneringGoodPriority</string>
+    <string name="preferenceKeyCorneringGoodScore">preferenceKeyCorneringGoodScore</string>
+    <string name="preferenceKeyCorneringMediumImage">preferenceKeyCorneringMediumImage</string>
+    <string name="preferenceKeyCorneringMediumLowThreshold">preferenceKeyCorneringMediumLowThreshold</string>
+    <string name="preferenceKeyCorneringMediumHighThreshold">preferenceKeyCorneringMediumHighThreshold</string>
+    <string name="preferenceKeyCorneringMediumPriority">preferenceKeyCorneringMediumPriority</string>
+    <string name="preferenceKeyCorneringMediumScore">preferenceKeyCorneringMediumScore</string>
+    <string name="preferenceKeyCorneringBadImage">preferenceKeyCorneringBadImage</string>
+    <string name="preferenceKeyCorneringBadLowThreshold">preferenceKeyCorneringBadLowThreshold</string>
+    <string name="preferenceKeyCorneringBadHighThreshold">preferenceKeyCorneringBadHighThreshold</string>
+    <string name="preferenceKeyCorneringBadPriority">preferenceKeyCorneringBadPriority</string>
+    <string name="preferenceKeyCorneringBadScore">preferenceKeyCorneringBadScore</string>
+    <string name="preferenceKeyKeepScreenOn">preferenceKeyKeepScreenOn</string>
+    <string name="preferenceKeyShowRawValues">preferenceKeyShowRawValues</string>
+    <string name="preferenceKeySecondsBeforeIdle">preferenceKeySecondsBeforeIdle</string>
+    <string name="preferenceKeyAutomaticTiltCorrection">preferenceKeyAutomaticTiltCorrection</string>
+    <string name="preferenceKeyManualTiltCorrection">preferenceKeyManualTiltCorrection</string>
+    <string name="preferenceKeySwapAccelBreak">preferenceKeySwapAccelBreak</string>
+    <string name="preferenceKeyLongTermRating">preferenceKeyLongTermRating</string>
+    <string name="preferenceKeySensitivity">preferenceKeySensitivity</string>
+    
+</resources>
